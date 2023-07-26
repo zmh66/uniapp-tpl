@@ -13,7 +13,8 @@
 				<u--text size="36" :text="'计数：' + counter.count"></u--text>
 			</view>
 		</u-skeleton>
-		<u-button type='primary' @click="handleAdd">增加</u-button>
+		<u-button type='success' @tap="handleAdd">增加</u-button>
+		<u-button type='primary' @tap="login">登录接口测试</u-button>
 		<u-album multipleSize='240' :urls="urls" space='2'></u-album>
 	</view>
 </template>
@@ -21,6 +22,7 @@
 <script setup>
 	import { globalStore } from '@/store/index'
 	import { ref } from 'vue'
+	import * as api from '@/apis/index.js'
 	
 	defineProps({
 		title: {
@@ -40,6 +42,14 @@
  
 	const handleAdd = () => {
 		counter.increment()
+	}
+
+	const login = () => {
+		api.login({
+		
+		}).then(() => {
+
+		})
 	}
 </script>
 

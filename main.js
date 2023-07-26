@@ -2,7 +2,7 @@ import App from './App'
 import { createSSRApp } from 'vue'
 import { createPinia } from 'pinia'
 import uviewPlus from '@/uni_modules/uview-plus'
-import { initRequest } from '@/util/request/index'
+import { initRequest } from '@/utils/request/index'
 
 export function createApp() {
 	
