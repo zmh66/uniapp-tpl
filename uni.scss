@@ -13,7 +13,10 @@
  */
 
 /* uni.scss */
-@import '@/uni_modules/uview-plus/theme.scss';
+@import '@/uni_modules/uv-ui-tools/theme.scss';
+/* 也可以引入自己的scss文件，变量名和theme.scss中保持一致即可 */
+// @import '@/common/css/theme-self.scss';
+$uvui-nvue-style: false;
 
 
 /* 颜色变量 */

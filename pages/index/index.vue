@@ -1,21 +1,20 @@
 <template>
 	<view>
-		<u-skeleton
+		<uv-skeleton
 			rows="2"
 			:title='false'
 			:loading='loading'
 			:rowsHeight="[48,24,]"
 		>
 			<view>
-				<u--text type="primary" size="48" :text='title'></u--text>
+				<uv-text type="primary" size="48" :text='title'></uv-text>
 			</view>
 			<view>
-				<u--text size="36" :text="'计数：' + counter.count"></u--text>
+				<uv-text size="36" :text="'计数：' + counter.count"></uv-text>
 			</view>
-		</u-skeleton>
-		<u-button type='success' @tap="handleAdd">增加</u-button>
-		<u-button type='primary' @tap="login">登录接口测试</u-button>
-		<u-album multipleSize='240' :urls="urls" space='2'></u-album>
+		</uv-skeleton>
+		<uv-button type='success' @tap="handleAdd">增加</uv-button>
+		<uv-button type='primary' @tap="login">登录接口测试</uv-button>
 	</view>
 </template>
 
@@ -54,8 +53,5 @@
 </script>
 
 <style lang="scss">
-	.u-album {
-		width: 750rpx;
-		height: 750rpx;
-	}
+
 </style>

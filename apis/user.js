@@ -1,4 +1,4 @@
-const { http } = uni.$u;
+const { http } = uni.$uv;
 
 // login
 export const login = (params, config = {}) =>
