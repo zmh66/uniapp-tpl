@@ -6,9 +6,7 @@
 			:loading='loading'
 			:rowsHeight="[48,24,]"
 		>
-			<view>
-				<u--text type="primary" size="48" :text='title'></u--text>
-			</view>
+			<my-com></my-com>
 			<view>
 				<u--text size="36" :text="'计数：' + counter.count"></u--text>
 			</view>
@@ -23,13 +21,6 @@
 	import { globalStore } from '@/store/index'
 	import { ref } from 'vue'
 	import * as api from '@/apis/index.js'
-	
-	defineProps({
-		title: {
-			type: String,
-			default: '首页'
-		},
-	});
 	
 	const loading = ref(true)
 	const url = ref('https://cdn.uviewui.com/uview/album/1.jpg')
